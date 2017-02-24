@@ -10,7 +10,6 @@ terrain_images = {"Grass": grass_image,
                   "Forest": forest_image}
 
 
-
 class GameMap(object):
     def __init__(self, x_tiles, y_tiles):
         self.tile_rows = []
@@ -26,7 +25,6 @@ class GameMap(object):
             self.tile_rows.append(this_row)
 
 
-
 class GameTile(object):
     def __init__(self, x, y):
         self.x = x
@@ -37,6 +35,7 @@ class GrassTile(GameTile):
     def __init__(self, x, y):
         super().__init__(x, y)
         self.terrain_type = "Grass"
+
 
 class ForestTile(GameTile):
     def __init__(self, x, y):
